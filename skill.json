@@ -1,0 +1,31 @@
+{
+  "name": "genpark-human-in-the-loop-annotation-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Human-agent hybrid dataset annotation and review protocol orchestrator.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "hitl-annotation",
+    "dataset-labeling",
+    "human-in-the-loop",
+    "ph-july27"
+  ],
+  "inputs": {
+    "raw_dataset_item": {
+      "type": "object"
+    },
+    "ai_confidence_threshold": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "annotation_status": {
+      "type": "string"
+    },
+    "assigned_reviewer": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
